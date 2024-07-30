@@ -9,7 +9,7 @@ from uat_eval.common.prompt_manager.PromptManager import ModelPrompt
 prompt_manager = ModelPrompt()
 
 #============================== Initialization Vertexai-Gemini Model ==============================#
-key_path = r"stellarforge-0f2555ce6b2f.json"
+key_path = r"/kaggle/input/keyfile/stellarforge-0f2555ce6b2f.json"
 credentials = Credentials.from_service_account_file(
     key_path,
     scopes=['https://www.googleapis.com/auth/cloud-platform'])

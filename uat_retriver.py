@@ -6,7 +6,7 @@ from pinecone import Pinecone
 
 #============================== Initialization Vertexai-TextEmbedding Model ==============================#
 
-key_path = r"stellarforge-0f2555ce6b2f.json"
+key_path = r"/kaggle/input/keyfile/stellarforge-0f2555ce6b2f.json"
 credentials = Credentials.from_service_account_file(
     key_path,
     scopes=['https://www.googleapis.com/auth/cloud-platform'])
