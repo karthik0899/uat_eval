@@ -2,7 +2,7 @@ import vertexai
 from vertexai.generative_models import GenerativeModel,HarmBlockThreshold,HarmCategory
 from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials
-from common.prompt_manager.PromptManager import ModelPrompt
+from uat_eval.common.prompt_manager.PromptManager import ModelPrompt
 
 #============================== Initialization prompt Manager ==============================#
 

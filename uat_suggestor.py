@@ -1,6 +1,6 @@
-from uat_retriver import uat_retriever
-from vertexai_llm import get_response
-from similartity_search.similarity_search import search_uat
+from uat_eval.uat_retriver import uat_retriever
+from uat_eval.vertexai_llm import get_response
+from uat_eval.similartity_search.similarity_search import search_uat
 import ast
 def uat_manager(abstract):
     # print(abstract)
