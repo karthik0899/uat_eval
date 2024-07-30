@@ -1,0 +1,22 @@
+Given a new astronomical concept and a list of relevant branches from the Unified Astronomy Thesaurus (UAT), suggest the single most appropriate branch for inclusion of this new concept. Provide the output in JSON format.
+
+{context}
+
+Consider the following:
+1. The conceptual relationship between the new concept and each listed branch
+2. The hierarchical structure of the UAT
+3. The possibility of placing the new concept at any level within a branch, not just at the end
+
+Provide the output in the following JSON format:
+
+{{
+  "new_concept": {{
+    "name": "Name of the new concept",
+    "definition": "Definition of the new concept"
+  }},
+  "suggested_placement": {{
+    "branch": "Name of the most appropriate UAT branch",
+    "location": "Specific location within the branch hierarchy (if applicable)",
+    "justification": "Brief explanation of why this branch and placement are most appropriate"
+  }}
+}}

@@ -1,0 +1,98 @@
+## Instruction
+You are tasked with analyzing the main abstract of a scientific paper to understand its core concepts. Additionally, you will compare this abstract with five other similar abstracts and identify the top 5 Unified Astronomy Thesaurus (UAT) concepts related to the main abstract. Finally, you will suggest new or novel UAT concepts that could be derived from the main abstract.
+
+### Input Data
+{context}
+### Task Breakdown
+1. Understand the Main Abstract:
+   - Summarize the main abstract to highlight its key points.
+   
+2. Compare with Similar Abstracts:
+   - Identify the common themes and differences between the main abstract and each of the five similar abstracts.
+   
+3. Identify Top 5 UAT Concepts hierarchies:
+   - Confirm the relevance of the provided top 5 UAT concepts to the main abstract.
+   
+4. Suggest New/Novel UAT Concepts hierarchies:
+   - Based on the main abstract and its comparison with similar abstracts, suggest new or novel UAT concepts that are not covered by the initial top 5 but are relevant to the content.
+
+## Expected Output
+```
+{{
+  "Summary of Main Abstract": "Summary of the Main Abstract",
+  
+  "Comparison with Similar Abstracts": {{
+    "Similar Abstract 1": {{
+      "common_themes": "",
+      "Differences": ""
+    }},
+    "Similar Abstract 2": {{
+      "common_themes": "",
+      "Differences": ""
+    }},
+    "Similar Abstract 3": {{
+      "common_themes": "",
+      "Differences": ""
+    }},
+    "Similar Abstract 4": {{
+      "common_themes": "",
+      "Differences": ""
+    }},
+    "Similar Abstract 5": {{
+      "common_themes": "",
+      "Differences": ""
+    }}
+  }},
+  
+  "Validation of Top 5 UAT Concepts": {{
+    "UAT Concept 1": {{
+      "relevance": "",
+      "justification": ""
+    }},
+    "UAT Concept 2": {{
+      "relevance": "",
+      "justification": ""
+    }},
+    "UAT Concept 3": {{
+      "relevance": "",
+      "justification": ""
+    }},
+    "UAT Concept 4": {{
+      "relevance": "",
+      "justification": ""
+    }},
+    "UAT Concept 5": {{
+      "relevance": "",
+      "justification": ""
+    }}
+  }},
+  
+  "New/Novel UAT Concepts": {{
+    "Suggested Concept 1": {{
+      "concept hierarchy": "",
+      "justification": ""
+    }},
+    "Suggested Concept 2": {{
+      "concept hierarchy": "",
+      "justification": ""
+    }},
+    "Suggested Concept 3": {{
+      "concept hierarchy": "",
+      "justification": ""
+    }},
+    "Suggested Concept 4": {{
+      "concept hierarchy": "",
+      "justification": ""
+    }},
+    "Suggested Concept 5": {{
+      "concept hierarchy": "",
+      "justification": ""
+    }}
+  }}
+}}
+```
+
+## Additional Instructions
+- Ensure that your analysis is detailed and that each step logically follows from the previous one.
+- Provide clear justifications for each identified or suggested UAT concept.
+- Use precise and academic language appropriate for a scientific context.

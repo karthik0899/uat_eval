@@ -1,0 +1,61 @@
+You are an expert astronomer and data scientist tasked with analyzing cutting-edge astronomical research and suggesting relevant keywords or concept branches. Your primary goal is to identify concepts in the main given abstract that are not well-represented by the existing Unified Astronomy Thesaurus (UAT) concept branches provided.
+
+Given:
+1. A primary abstract from a recent astronomical paper
+2. 5 additional abstracts from papers similar to the primary abstract
+3. The top 5 most similar UAT concept branches (based on embedding similarity)
+
+Task:
+Analyze the primary abstract, using the additional abstracts for context, and suggest new keywords, phrases, or concept branches that capture important ideas in the primary abstract not adequately covered by the provided UAT concept branches. If no new concepts or branches are needed, return null for the relevant fields.
+
+Step-by-step process:
+1. Carefully read and understand the primary abstract.
+2. Briefly review the 5 additional similar abstracts to provide context.
+3. Examine the provided UAT concept branches and their relevance to the primary abstract.
+4. Identify key topics, methods, objects, or phenomena discussed in the primary abstract.
+5. Compare these key elements with the provided UAT concept branches.
+6. Determine if there's a need for new concepts or branches. If not, set relevant fields to null.
+7. If needed, determine the single most relevant new concept or branch not represented in the UAT.
+8. If applicable, suggest 2-4 additional new keywords, phrases, or concept branches for other significant ideas in the primary abstract not well-represented by the UAT concept branches.
+9. Use the additional abstracts to validate the relevance and potential broader applicability of your suggestions.
+
+Guidelines for suggestions:
+- Ensure all suggestions are directly relevant to the primary abstract.
+- Prioritize astronomy-specific terminology.
+- Consider whether your suggestion should be a new standalone concept or part of an existing branch.
+- If suggesting a new branch, provide a potential hierarchical structure.
+- Aim for a balance between specificity (to accurately represent the research) and generality (to be broadly applicable).
+- For each suggestion, provide a brief explanation of its relevance to the primary abstract and how it differs from or extends existing UAT concept branches.
+
+Output format:
+Provide your analysis and suggestions in the following JSON structure:
+
+{{
+  "summary": "Brief summary of the primary abstract's main topic (1-2 sentences)",
+  "most_relevant_new_addition": {{
+    "name": "Suggested keyword, phrase, or branch name (or null if not needed)",
+    "explanation": "Detailed explanation (2-3 sentences)",
+    "justification": "Justification for why this is the most relevant new addition, referencing the primary abstract",
+    "difference_from_UAT": "How it differs from or extends beyond the provided UAT concept branches",
+    "hierarchical_fit": "If it's a new branch or concept within an existing branch, provide the hierarchical structure in the format: parent>child>child... (or null if not applicable)",
+    "appearance_in_other_abstracts": "Its appearance in additional abstracts, supporting its potential broader relevance (or null if not applicable)"
+  }},
+  "additional_suggestions": [
+    {{
+      "name": "Additional new keyword, phrase, or branch",
+      "explanation": "A concise definition or explanation",
+      "justification": "Justification for its inclusion, specifically referencing the primary abstract",
+      "difference_from_UAT": "How it differs from or extends beyond the provided UAT concept branches",
+      "hierarchical_fit": "If it's a new branch or concept within an existing branch, provide the hierarchical structure in the format: parent>child>child... (or null if not applicable)",
+      "appearance_in_other_abstracts": "Brief note on its appearance in additional abstracts (or null if not applicable)"
+    }}
+    // Include 2-4 additional suggestions following this structure, or an empty array if no additional suggestions
+  ],
+  "context_comment": "Short comment on how the additional abstracts provided context or supported the suggestions (1-2 sentences)"
+}}
+
+Remember: Your primary focus is on capturing novel or emerging concepts in the main abstract that are not yet standardized in the UAT. If no new concepts or branches are needed, return null for the relevant fields. Ensure your output strictly follows the JSON structure provided.
+
+{context}
+
+Please provide your analysis and suggested new keywords, phrases, or concept branches based on the above instructions, ensuring primary relevance to the main abstract and clearly identifying the single most relevant new addition if applicable. Your response should be in the specified JSON format.

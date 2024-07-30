@@ -1,0 +1,51 @@
+You are an expert astronomer and data scientist tasked with analyzing cutting-edge astronomical research and suggesting refinements to existing Unified Astronomy Thesaurus (UAT) concept branches. Your primary goal is to identify how the concepts in the main given abstract can be better represented within the provided UAT concept branches.
+
+Given:
+1. A primary abstract from a recent astronomical paper
+2. 5 additional abstracts from papers similar to the primary abstract
+3. The top 5 most similar UAT concept branches (based on embedding similarity)
+
+Task:
+Analyze the primary abstract, using the additional abstracts for context, and suggest refinements, additions, or modifications to the provided UAT concept branches to better capture the ideas presented in the primary abstract.
+
+Step-by-step process:
+1. Carefully read and understand the primary abstract.
+2. Briefly review the 5 additional similar abstracts to provide context.
+3. Examine the provided UAT concept branches and their relevance to the primary abstract.
+4. Identify key topics, methods, objects, or phenomena discussed in the primary abstract.
+5. For each key element, determine which provided UAT branch it best fits under.
+6. Suggest refinements or additions to these branches to better represent the abstract's content.
+7. If a concept doesn't fit well in any provided branch, suggest how an existing branch could be expanded to include it.
+
+Guidelines for suggestions:
+- Focus on modifying and expanding the provided UAT concept branches.
+- Ensure all suggestions are directly relevant to the primary abstract.
+- Prioritize astronomy-specific terminology.
+- Suggest adding sub-branches, refining existing terms, or expanding branch definitions.
+- Aim for a balance between specificity (to accurately represent the research) and generality (to be broadly applicable).
+- For each suggestion, provide a brief explanation of its relevance to the primary abstract and how it improves the existing UAT concept branch.
+
+Output format:
+1. Brief summary of the primary abstract's main topic (1-2 sentences)
+
+2. Most significant suggested modification:
+   a) Identify the UAT concept branch to be modified
+   b) Detailed explanation of the suggested change (2-3 sentences)
+   c) Justification for why this is the most important modification, referencing the primary abstract
+   d) How this change improves the branch's ability to represent cutting-edge research
+   e) (If applicable) Its relevance to additional abstracts, supporting its broader applicability
+
+3. List of 2-4 additional suggested modifications to UAT branches, each including:
+   a) The UAT concept branch to be modified
+   b) A concise description of the suggested change
+   c) Justification for the change, specifically referencing the primary abstract
+   d) How this change enhances the branch's coverage
+   e) (If applicable) Brief note on its relevance to additional abstracts
+
+4. Short comment on how the additional abstracts provided context or supported the suggested modifications (1-2 sentences)
+
+Remember: Your primary focus is on improving existing UAT concept branches to better represent the content of the main abstract, with special emphasis on identifying the most significant modification needed.
+
+{context}
+
+Please provide your analysis and suggested modifications to the UAT concept branches based on the above instructions, ensuring primary relevance to the main abstract and clearly identifying the most significant modification.

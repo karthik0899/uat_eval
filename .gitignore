@@ -1,0 +1,9 @@
+Persistance_storage
+
+*__pycache__
+
+# skip json files
+*.json
+
+# skip csv files
+*.csv
