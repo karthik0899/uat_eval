@@ -3,7 +3,7 @@ import shutil
 import warnings
 
 class Model:
-    def __init__(self, name, main_folder_path='common/prompt_manager/prompts'):
+    def __init__(self, name, main_folder_path='uat_eval/common/prompt_manager/prompts'):
         self.name = name
         self.main_folder_path = main_folder_path
         self.folder_path = os.path.join(main_folder_path, name)
@@ -78,7 +78,7 @@ class Model:
         return f"Model(name={self.name}, prompts={list(self.prompts.keys())})"
 
 class ModelPrompt:
-    def __init__(self, main_folder_path='common/prompt_manager/prompts'):
+    def __init__(self, main_folder_path='uat_eval/common/prompt_manager/prompts'):
         self.main_folder_path = main_folder_path
         self.models = {}
         self.update_models()
