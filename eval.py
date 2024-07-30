@@ -69,7 +69,6 @@ for i in range(len(df_subset_eval['abstract'])):
 df_subset_eval.to_csv('uat_eval_dataset_output_new.csv', index=False)
 
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'stellarforge-0f2555ce6b2f.json'
 os.environ['PROJECT_ID'] = 'stellarforge'
 
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
